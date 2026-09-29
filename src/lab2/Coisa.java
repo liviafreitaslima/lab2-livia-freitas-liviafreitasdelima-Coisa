@@ -1,13 +1,14 @@
 package lab2;
+
 public class Coisa {
     public static void main(String[] args) {
         registrarDescanso();
         System.out.println("-----");
-        registrarTempoOnline();
+        //registrarTempoOnline();
         System.out.println("-----");
-        controlarDisciplina();
+        //controlarDisciplina();
         System.out.println("-----");
-        registrarResumos();
+        //registrarResumos();
     }
     public static void registrarDescanso() {
         Descanso descanso = new Descanso();
@@ -22,6 +23,7 @@ public class Coisa {
         descanso.defineNumeroSemanas(1);
         System.out.println(descanso.getStatusGeral());
     }
+    /**
     private static void registrarTempoOnline() {
         RegistroTempoOnline tempoLP2 = new RegistroTempoOnline("LP2", 30);
         tempoLP2.adicionaTempoOnline(10);
@@ -67,4 +69,5 @@ public class Coisa {
         System.out.println(meusResumos.temResumo("Classes"));
         System.out.println(meusResumos.temResumo("Objetos"));
     }
+     **/
 }
