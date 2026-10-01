@@ -4,9 +4,9 @@ public class Coisa {
     public static void main(String[] args) {
         registrarDescanso();
         System.out.println("-----");
-        //registrarTempoOnline();
+        registrarTempoOnline();
         System.out.println("-----");
-        //controlarDisciplina();
+        controlarDisciplina();
         System.out.println("-----");
         //registrarResumos();
     }
@@ -23,7 +23,7 @@ public class Coisa {
         descanso.defineNumeroSemanas(1);
         System.out.println(descanso.getStatusGeral());
     }
-    /**
+
     private static void registrarTempoOnline() {
         RegistroTempoOnline tempoLP2 = new RegistroTempoOnline("LP2", 30);
         tempoLP2.adicionaTempoOnline(10);
@@ -47,7 +47,7 @@ public class Coisa {
         prog2.cadastraNota(4, 10.0);
         System.out.println(prog2.aprovado());
         System.out.println(prog2.toString());
-    }
+    }/**
     private static void registrarResumos() {
         RegistroResumos meusResumos = new RegistroResumos(100);  // 100 resumos
 
