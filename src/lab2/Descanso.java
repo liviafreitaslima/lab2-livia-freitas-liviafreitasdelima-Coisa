@@ -8,9 +8,11 @@ public class Descanso {
         this.horasDescanso= 0;
         this.numerosDaSemana = 1;
     }
+
     public void defineHorasDescanso(int valor){
         this.horasDescanso = valor;
     }
+
     public void defineNumeroSemanas(int num){
         if (num<=0){
             System.out.println("Numero Inválido! Escolha um número maior que 0.");

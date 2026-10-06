@@ -24,16 +24,19 @@ public class Disciplina {
     public boolean aprovado(){
         double soma = 0;
         for (double nota:notas){
-            soma+=nota;
+            soma += nota;
         }
-
+        // essas quebras de linha mais soltam alguns casos pode dificultar a leitura  do codigo (nao foi o caso desse)
         this.media = soma/4;
 
-        return media>=7;
+        return media >= 7;
     }
+
 
     @Override
     public String toString(){
-        return this.nomeDisciplina+" "+this.horasDeEstudo+" "+this.media+" "+Arrays.toString(notas);
+        // é uma boa pratica dar espaço entre esses operadores matematicos e em casos de atribuicao como em (soma+=nota;) logo acima,
+        // pois facilita a legebilidade no refatoramento. em alguns casos, voce nao quebrar a linha vai confundir na concatenacao
+        return this.nomeDisciplina + " " + this.horasDeEstudo + " " + this.media + " " + Arrays.toString(notas);
     }
 }
