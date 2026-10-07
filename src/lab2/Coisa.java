@@ -1,5 +1,9 @@
 package lab2;
-
+/**
+ * Laboratório de Programação 2 - Lab 2
+ *
+ * @author Lívia Freitas de Lima - 20260005900
+ */
 public class Coisa {
     public static void main(String[] args) {
         registrarDescanso();
