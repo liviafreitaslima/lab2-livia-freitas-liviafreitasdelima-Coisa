@@ -66,6 +66,15 @@ public class Coisa {
             System.out.println(resumos[i]);
         }
 
+        /**
+         * Adição para exemplificar o uso de String[] busca(String chaveDeBusca)
+         */
+        System.out.println("Temas de resumos que possuem a palavra chave 'semântica' em seu contéudo:");
+        String[] busca = meusResumos.busca("semântica");
+        for (int i = 0; i < busca.length; i++){
+            if(busca[i]!=null){System.out.println(busca[i]);}
+        }
+
 
         System.out.println();
         System.out.println("Resumos: ");

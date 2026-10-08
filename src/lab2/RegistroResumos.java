@@ -9,7 +9,7 @@ package lab2;
  * A classe RegistroResumos é responsável por armazenar e gerenciar os resumos feitos pelo aluno.
  */
 
-public class RegistroResumos {
+public class RegistroResumos{
     private int iResumos;
     private Resumo[] resumos;
 
@@ -102,5 +102,20 @@ public class RegistroResumos {
             }
         }
         return false;
+    }
+
+    /**
+     * Confere se existe algum resumo de algum tema que possua certo valor em seu contéudo.
+     * @param chaveDeBusca valor a ser procurado
+     * @return temas dos resumos nos quais a chave de busca está presente em seus respectivos conteúdos.
+     */
+    public String[] busca(String chaveDeBusca){
+        String [] temasencontrados = new String[resumos.length];
+        for (int i=0; i<resumos.length; i++){
+            if (resumos[i] != null && resumos[i].getConteudo().contains(chaveDeBusca)){
+                temasencontrados[i] = this.resumos[i].getTema();
+            }
+        }
+        return temasencontrados;
     }
 }
